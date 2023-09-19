@@ -4,8 +4,8 @@ import {
 	web,
 	javascript,
 	typescript,
-	html,
-	css,
+	html5,
+	css3,
 	reactjs,
 	redux,
 	tailwind,
@@ -57,11 +57,11 @@ const services = [
 const technologies = [
 	{
 		name: 'HTML 5',
-		icon: html,
+		icon: html5,
 	},
 	{
 		name: 'CSS 3',
-		icon: css,
+		icon: css3,
 	},
 	{
 		name: 'JavaScript',

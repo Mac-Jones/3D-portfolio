@@ -7,6 +7,9 @@ import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
+import css3 from './tech/css3.png';
+import html5 from './tech/html5.png';
+
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -40,10 +43,12 @@ export {
 	menu,
 	close,
 	css,
+	css3,
 	docker,
 	figma,
 	git,
 	html,
+	html5,
 	javascript,
 	mongodb,
 	nodejs,

@@ -16,7 +16,7 @@ const Hero = () => {
 						<span className='text-[#915eff]  md:inline block'>Mac Jones</span>
 					</h1>
 					<p className='hero-sub-text mt-2 text-white-100'>
-						I develop stunnig web application,{' '}
+						I develop stunning web application,{' '}
 						<br className='sm:block hidden' /> user-centric interfaces, and
 						fullstack solutions
 					</p>
