@@ -4,24 +4,29 @@ import {
 	web,
 	javascript,
 	typescript,
-	html5,
-	css3,
+	html,
+	css,
 	reactjs,
 	redux,
 	tailwind,
 	nodejs,
 	mongodb,
+	nextjs,
 	git,
 	figma,
 	docker,
-	meta,
-	starbucks,
-	tesla,
-	shopify,
-	carrent,
-	jobit,
-	tripguide,
 	threejs,
+	princess,
+	glydell,
+	nikeapp,
+	promptopia,
+	piggame,
+	mjstore,
+	calculator,
+	monster,
+	food,
+	breakout,
+	funrun,
 } from '../assets';
 
 export const navLinks = [
@@ -30,8 +35,8 @@ export const navLinks = [
 		title: 'About',
 	},
 	{
-		id: 'work',
-		title: 'Work',
+		id: 'projects',
+		title: 'Projects',
 	},
 	{
 		id: 'contact',
@@ -57,11 +62,11 @@ const services = [
 const technologies = [
 	{
 		name: 'HTML 5',
-		icon: html5,
+		icon: html,
 	},
 	{
 		name: 'CSS 3',
-		icon: css3,
+		icon: css,
 	},
 	{
 		name: 'JavaScript',
@@ -91,6 +96,11 @@ const technologies = [
 		name: 'MongoDB',
 		icon: mongodb,
 	},
+
+	{
+		name: 'Next JS',
+		icon: nextjs,
+	},
 	{
 		name: 'Three JS',
 		icon: threejs,
@@ -109,155 +119,224 @@ const technologies = [
 	},
 ];
 
-const experiences = [
-	{
-		title: 'React.js Developer',
-		company_name: 'Starbucks',
-		icon: starbucks,
-		iconBg: '#383E56',
-		date: 'March 2020 - April 2021',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'React Native Developer',
-		company_name: 'Tesla',
-		icon: tesla,
-		iconBg: '#E6DEDD',
-		date: 'Jan 2021 - Feb 2022',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'Web Developer',
-		company_name: 'Shopify',
-		icon: shopify,
-		iconBg: '#383E56',
-		date: 'Jan 2022 - Jan 2023',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-	{
-		title: 'Full stack Developer',
-		company_name: 'Meta',
-		icon: meta,
-		iconBg: '#E6DEDD',
-		date: 'Jan 2023 - Present',
-		points: [
-			'Developing and maintaining web applications using React.js and other related technologies.',
-			'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-			'Implementing responsive design and ensuring cross-browser compatibility.',
-			'Participating in code reviews and providing constructive feedback to other developers.',
-		],
-	},
-];
-
 const testimonials = [
 	{
 		testimonial:
-			'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-		name: 'Sara Lee',
-		designation: 'CFO',
-		company: 'Acme Co',
-		image: 'https://randomuser.me/api/portraits/women/4.jpg',
+			'Frontend development is an art, and Mac Jones is a true artist in this field. His work speaks volumes about his talent and dedication.',
+		name: 'Princess Mendoza',
+		image: princess,
 	},
 	{
 		testimonial:
-			"I've never met a web developer who truly cares about their clients' success like Rick does.",
-		name: 'Chris Brown',
-		designation: 'COO',
-		company: 'DEF Corp',
-		image: 'https://randomuser.me/api/portraits/men/5.jpg',
+			"I've never met a web developer who truly cares about their clients' success like Mac Jones does.",
+		name: 'Glydell Soriano',
+		image: glydell,
 	},
 	{
 		testimonial:
-			"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-		name: 'Lisa Wang',
-		designation: 'CTO',
-		company: '456 Enterprises',
+			'Mac Jones is a top-notch frontend developer! His work is exceptional, and he brings creativity and precision to every project.',
+		name: 'Rod Abraham Melano',
 		image: 'https://randomuser.me/api/portraits/women/6.jpg',
 	},
 ];
 
 const projects = [
 	{
-		name: 'Car Rent',
+		name: 'Nike App',
 		description:
-			'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+			'A sleek and responsive fitness application built with Tailwind CSS, providing a seamless user experience through beautifully designed UI components.',
 		tags: [
 			{
 				name: 'react',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'mongodb',
+				name: 'tailwindcss',
 				color: 'green-text-gradient',
 			},
-			{
-				name: 'tailwind',
-				color: 'pink-text-gradient',
-			},
 		],
-		image: carrent,
-		source_code_link: 'https://github.com/',
-		live: 'https://google.com/',
+		image: nikeapp,
+		source_code_link: 'https://github.com/Mac-Jones/nike-app-tailwind',
+		live: 'https://nike-app-tailwind-css.netlify.app/',
 	},
+
 	{
-		name: 'Job IT',
+		name: 'Promptopia',
 		description:
-			'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-		tags: [
-			{
-				name: 'react',
-				color: 'blue-text-gradient',
-			},
-			{
-				name: 'restapi',
-				color: 'green-text-gradient',
-			},
-			{
-				name: 'scss',
-				color: 'pink-text-gradient',
-			},
-		],
-		image: jobit,
-		source_code_link: 'https://github.com/',
-		live: 'https://google.com/',
-	},
-	{
-		name: 'Trip Guide',
-		description:
-			'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+			'Promptopia is an innovative writing assistant powered by AI, crafted with Tailwind CSS, Next.js, and React.js. It offers an inspiring collection of creative prompts to spark your imagination and enhance your writing skills.',
 		tags: [
 			{
 				name: 'nextjs',
 				color: 'blue-text-gradient',
 			},
 			{
-				name: 'supabase',
+				name: 'tailwindcss',
 				color: 'green-text-gradient',
 			},
 			{
-				name: 'css',
+				name: 'react',
 				color: 'pink-text-gradient',
 			},
 		],
-		image: tripguide,
-		source_code_link: 'https://github.com/',
-		live: 'https://google.com/',
+		image: promptopia,
+		source_code_link: 'https://github.com/Mac-Jones/promptopia',
+		live: 'https://promptopia-cygqn8tia-mac-jones.vercel.app/',
+	},
+
+	{
+		name: 'MJ Store',
+		description:
+			'An advanced e-commerce platform built using React, TypeScript, Redux, and other cutting-edge technologies. Explore a wide range of products, enjoy a seamless shopping experience, and discover exclusive deals.',
+		tags: [
+			{
+				name: 'redux',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'typescript',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: mjstore,
+		source_code_link: 'https://github.com/Mac-Jones/mac-jones-store',
+		live: 'https://mac-jones-store-reactjs-redux.netlify.app',
+	},
+
+	{
+		name: 'Pig Game',
+		description:
+			'Pig Game is a fun and engaging dice game implemented with HTML, CSS, and JavaScript. Challenge your friends in this two-player game, where you roll the dice, accumulate points, and strategize to avoid the dreaded pig-out.',
+		tags: [
+			{
+				name: 'html',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'css',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'javascript',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: piggame,
+		source_code_link: 'https://github.com/Mac-Jones/pig-game-javascript',
+		live: 'https://pig-game-mac-jones.netlify.app/',
+	},
+	{
+		name: 'Calculator App',
+		description:
+			'A versatile calculator application developed with React.js, providing users with a user-friendly interface for performing basic and advanced mathematical calculations.',
+		tags: [
+			{
+				name: 'sass',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'react',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'redux',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: calculator,
+		source_code_link: 'https://github.com/Mac-Jones/react-calculator',
+		live: 'https://simple-calculator-reactjs-mj.netlify.app/',
+	},
+
+	{
+		name: 'Monsters Rolodex',
+		description:
+			'An interactive web application built with React.js that showcases a rolodex of friendly and spooky monsters. Easily search and filter through a collection of unique monster profiles.',
+		tags: [
+			{
+				name: 'react',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'sass',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'javascript',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: monster,
+		source_code_link: 'https://github.com/Mac-Jones/monster-rolodex',
+		live: 'https://monsters-rolodex-mj.netlify.app/',
+	},
+	{
+		name: 'Recipe App',
+		description:
+			'A versatile Recipe App powered by pure JavaScript. Fetch and explore a vast library of mouthwatering recipes from an external API, create shopping lists, and embark on culinary adventures. Utilizes RESTful API for seamless data retrieval and CRUD operations for user convenience.',
+		tags: [
+			{
+				name: 'javascript',
+				color: 'orange-text-gradient',
+			},
+			{
+				name: 'restful-api',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'crud',
+				color: 'green-text-gradient',
+			},
+		],
+		image: food,
+		source_code_link: 'https://github.com/Mac-Jones/forkify-app',
+		live: 'https://recipe-app-macjones.netlify.app',
+	},
+	{
+		name: 'Breakout',
+		description:
+			'An exciting Breakout game developed using HTML5, CSS, and JavaScript. Test your reflexes and coordination as you control the paddle to break the bricks and score points.',
+		tags: [
+			{
+				name: 'html',
+				color: 'orange-text-gradient',
+			},
+			{
+				name: 'css',
+				color: 'blue-text-gradient',
+			},
+
+			{
+				name: 'javascript',
+				color: 'green-text-gradient',
+			},
+		],
+		image: breakout,
+		source_code_link: 'https://github.com/Mac-Jones/breakout-game-javascript',
+		live: 'https://breakout-macjones.netlify.app/',
+	},
+
+	{
+		name: 'Fun Run Registration',
+		description:
+			'A user-friendly web application designed for registering participants in fun runs and charity events. Built with modern web technologies to streamline the registration process and enhance the event experience.',
+		tags: [
+			{
+				name: 'react',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'sass',
+				color: 'green-text-gradient',
+			},
+		],
+		image: funrun,
+		source_code_link: 'https://github.com/Mac-Jones/fun-run-project.git',
+		live: 'https://fun-run-project-mj.netlify.app/',
 	},
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, testimonials, projects };

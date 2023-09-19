@@ -23,15 +23,24 @@ import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 import threejs from './tech/threejs.svg';
+import nextjs from './tech/nextjs.png';
 
-import meta from './company/meta.png';
-import shopify from './company/shopify.png';
-import starbucks from './company/starbucks.png';
-import tesla from './company/tesla.png';
+import princess from './testimonial/princess.jpg';
+import glydell from './testimonial/glydell.jpg';
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+
+import nikeapp from './project/nike-app.png';
+import promptopia from './project/promptopia.png';
+import piggame from './project/pig-game.png';
+import mjstore from './project/mj-store.png';
+import calculator from './project/calculator.jpg';
+import monster from './project/Monster.png';
+import food from './project/food.png';
+import breakout from './project/breakout-game.png';
+import funrun from './project/fun-run.png';
 
 export {
 	logo,
@@ -49,6 +58,7 @@ export {
 	git,
 	html,
 	html5,
+	nextjs,
 	javascript,
 	mongodb,
 	nodejs,
@@ -57,11 +67,18 @@ export {
 	tailwind,
 	typescript,
 	threejs,
-	meta,
-	shopify,
-	starbucks,
-	tesla,
 	carrent,
 	jobit,
 	tripguide,
+	princess,
+	glydell,
+	nikeapp,
+	promptopia,
+	piggame,
+	mjstore,
+	calculator,
+	monster,
+	food,
+	breakout,
+	funrun,
 };
