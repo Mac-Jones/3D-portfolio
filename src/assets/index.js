@@ -7,12 +7,7 @@ import github from './github.png';
 import menu from './menu.svg';
 import close from './close.svg';
 
-import css3 from './tech/css3.png';
-import html5 from './tech/html5.png';
-
 import css from './tech/css.png';
-import docker from './tech/docker.png';
-import figma from './tech/figma.png';
 import git from './tech/git.png';
 import html from './tech/html.png';
 import javascript from './tech/javascript.png';
@@ -22,14 +17,12 @@ import reactjs from './tech/reactjs.png';
 import redux from './tech/redux.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
-import threejs from './tech/threejs.svg';
 import nextjs from './tech/nextjs.png';
 
 import princess from './testimonial/princess.jpg';
 import glydell from './testimonial/glydell.jpg';
+import rod from './testimonial/rod.jpg';
 
-import carrent from './carrent.png';
-import jobit from './jobit.png';
 import tripguide from './tripguide.png';
 
 import nikeapp from './project/nike-app.png';
@@ -52,12 +45,8 @@ export {
 	menu,
 	close,
 	css,
-	css3,
-	docker,
-	figma,
 	git,
 	html,
-	html5,
 	nextjs,
 	javascript,
 	mongodb,
@@ -66,12 +55,10 @@ export {
 	redux,
 	tailwind,
 	typescript,
-	threejs,
-	carrent,
-	jobit,
 	tripguide,
 	princess,
 	glydell,
+	rod,
 	nikeapp,
 	promptopia,
 	piggame,

@@ -21,7 +21,7 @@ const ProjectCard = ({
 	const openSourceCodeLink = () => window.open(source_code_link, '_blank');
 
 	return (
-		<div>
+		<>
 			<div className='bg-tertiary p-5 rounded-2xl sm:w-[350px] h-full w-full'>
 				<div className='relative w-full h-[230px]'>
 					<img
@@ -67,26 +67,26 @@ const ProjectCard = ({
 					))}
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
 const Projects = () => {
 	return (
 		<>
-			<div>
-				<p className='section-sub-text'>My Work</p>
-				<h2 className='section-head-text'>Projects</h2>
-			</div>
+			<motion.div>
+				<p className='section-sub-text'>Introduction</p>
+				<h2 className='section-head-text'>Overview</h2>
+			</motion.div>
 
 			<div className='w-full flex'>
-				<p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+				<motion.p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
 					Following projects showcases my skills and experience through
 					real-world examples of my work. Each project is briefly described with
 					links to code repositories and live demos in it. It reflects my
 					ability to solve complex problems, work with different technologies,
 					and manage projects effectively.
-				</p>
+				</motion.p>
 			</div>
 
 			<div className='mt-20 flex flex-wrap gap-7 w-full'>

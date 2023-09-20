@@ -13,11 +13,9 @@ import {
 	mongodb,
 	nextjs,
 	git,
-	figma,
-	docker,
-	threejs,
 	princess,
 	glydell,
+	rod,
 	nikeapp,
 	promptopia,
 	piggame,
@@ -61,6 +59,29 @@ const services = [
 
 const technologies = [
 	{
+		name: 'Tailwind CSS',
+		icon: tailwind,
+	},
+	{
+		name: 'Node JS',
+		icon: nodejs,
+	},
+	{
+		name: 'MongoDB',
+		icon: mongodb,
+	},
+
+	{
+		name: 'Next JS',
+		icon: nextjs,
+	},
+
+	{
+		name: 'git',
+		icon: git,
+	},
+
+	{
 		name: 'HTML 5',
 		icon: html,
 	},
@@ -84,39 +105,6 @@ const technologies = [
 		name: 'Redux Toolkit',
 		icon: redux,
 	},
-	{
-		name: 'Tailwind CSS',
-		icon: tailwind,
-	},
-	{
-		name: 'Node JS',
-		icon: nodejs,
-	},
-	{
-		name: 'MongoDB',
-		icon: mongodb,
-	},
-
-	{
-		name: 'Next JS',
-		icon: nextjs,
-	},
-	{
-		name: 'Three JS',
-		icon: threejs,
-	},
-	{
-		name: 'git',
-		icon: git,
-	},
-	{
-		name: 'figma',
-		icon: figma,
-	},
-	{
-		name: 'docker',
-		icon: docker,
-	},
 ];
 
 const testimonials = [
@@ -136,7 +124,7 @@ const testimonials = [
 		testimonial:
 			'Mac Jones is a top-notch frontend developer! His work is exceptional, and he brings creativity and precision to every project.',
 		name: 'Rod Abraham Melano',
-		image: 'https://randomuser.me/api/portraits/women/6.jpg',
+		image: rod,
 	},
 ];
 
