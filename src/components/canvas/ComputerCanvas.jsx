@@ -1,11 +1,11 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, lazy } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
 // import { useMediaQuery } from 'react-responsive';
 
 import CanvasLoader from '../Loader';
-import Computer from './Computer';
+const Computer = lazy(() => import('../canva/Computer'));
 
 const ComputerCanvas = () => {
 	// const [mobileView, setMobileView] = useState(false);
@@ -16,7 +16,7 @@ const ComputerCanvas = () => {
 	// }, [isMobile]);
 
 	return (
-		<div className='absolute  left-0 right-0 inset-y-0 bg-black -z-10'>
+		<div className='absolute  left-0 right-0 inset-y-0 z-10'>
 			<Canvas camera={{ position: [20, 3, 5], fov: 25 }}>
 				<Suspense fallback={<CanvasLoader />}>
 					<OrbitControls
