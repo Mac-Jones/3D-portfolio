@@ -17,32 +17,29 @@ const ProjectCard = ({
 	source_code_link,
 	live,
 }) => {
+	const openLiveLink = () => window.open(live, '_blank');
+	const openSourceCodeLink = () => window.open(source_code_link, '_blank');
+
 	return (
-		<motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-			<Tilt
-				options={{
-					max: 45,
-					scale: 1,
-					speed: 450,
-				}}
-				className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-			>
+		<div>
+			<div className='bg-tertiary p-5 rounded-2xl sm:w-[350px] h-full w-full'>
 				<div className='relative w-full h-[230px]'>
 					<img
 						src={image}
 						alt='project_image'
 						className='w-full h-full object-cover rounded-2xl'
+						loading='lazy'
 					/>
 
 					<div className='absolute inset-0 flex justify-end gap-2 m-3 card-img_hover'>
 						<div
-							onClick={() => window.open(live, '_blank')}
+							onClick={openLiveLink}
 							className='violet-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
 						>
 							<GrDeploy className='w-1/2 h-1/2 object-contain ' />
 						</div>
 						<div
-							onClick={() => window.open(source_code_link, '_blank')}
+							onClick={openSourceCodeLink}
 							className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
 						>
 							<img
@@ -69,36 +66,35 @@ const ProjectCard = ({
 						</p>
 					))}
 				</div>
-			</Tilt>
-		</motion.div>
+			</div>
+		</div>
 	);
 };
 
 const Projects = () => {
 	return (
 		<>
-			<motion.div variants={textVariant()}>
+			<div>
 				<p className='section-sub-text'>My Work</p>
 				<h2 className='section-head-text'>Projects</h2>
-			</motion.div>
+			</div>
 
 			<div className='w-full flex'>
-				<motion.p
-					variants={fadeIn('', '', 0.1, 1)}
-					className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
-				>
+				<p className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
 					Following projects showcases my skills and experience through
 					real-world examples of my work. Each project is briefly described with
 					links to code repositories and live demos in it. It reflects my
 					ability to solve complex problems, work with different technologies,
 					and manage projects effectively.
-				</motion.p>
+				</p>
 			</div>
 
-			<div className='mt-20 flex flex-wrap gap-7'>
-				{projects.map((project, index) => (
-					<ProjectCard key={`project-${index}`} index={index} {...project} />
-				))}
+			<div className='mt-20 flex flex-wrap gap-7 w-full'>
+				{projects.map((project, index) => {
+					return (
+						<ProjectCard key={`project-${index}`} index={index} {...project} />
+					);
+				})}
 			</div>
 		</>
 	);
