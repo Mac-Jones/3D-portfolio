@@ -16,7 +16,7 @@ const ComputerCanvas = () => {
 	// }, [isMobile]);
 
 	return (
-		<div className='absolute  left-0 right-0 inset-y-0 bg-black'>
+		<div className='absolute  left-0 right-0 inset-y-0 bg-black -z-10'>
 			<Canvas camera={{ position: [20, 3, 5], fov: 25 }}>
 				<Suspense fallback={<CanvasLoader />}>
 					<OrbitControls
