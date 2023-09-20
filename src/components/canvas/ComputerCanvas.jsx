@@ -10,10 +10,10 @@ import Computer from './Computer';
 const ComputerCanvas = () => {
 	const [mobileView, setMobileView] = useState(false);
 
-	const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
-	useEffect(() => {
-		setMobileView(isMobile);
-	}, [isMobile]);
+	// const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+	// useEffect(() => {
+	// 	setMobileView(isMobile);
+	// }, [isMobile]);
 
 	return (
 		<Canvas
@@ -29,7 +29,7 @@ const ComputerCanvas = () => {
 					maxPolarAngle={Math.PI / 2}
 					minPolarAngle={Math.PI / 2}
 				/>
-				{isMobile && <Computer isMobile={mobileView} />}
+				<Computer isMobile={mobileView} />
 			</Suspense>
 
 			<Preload all />
