@@ -1,22 +1,23 @@
-import { Suspense, lazy } from 'react';
+import { Suspense, lazy, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
 
-// import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 import CanvasLoader from '../Loader';
-const Computer = lazy(() => import('../canva/Computer'));
+
+import Computer from '../canva/Computer';
 
 const ComputerCanvas = () => {
-	// const [mobileView, setMobileView] = useState(false);
+	const [mobileView, setMobileView] = useState(false);
 
-	// const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
-	// useEffect(() => {
-	// 	setMobileView(isMobile);
-	// }, [isMobile]);
+	const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+	useEffect(() => {
+		setMobileView(isMobile);
+	}, [isMobile]);
 
 	return (
-		<div className='absolute  left-0 right-0 inset-y-0 z-10'>
+		<div className='absolute inset-0'>
 			<Canvas camera={{ position: [20, 3, 5], fov: 25 }}>
 				<Suspense fallback={<CanvasLoader />}>
 					<OrbitControls
@@ -24,7 +25,7 @@ const ComputerCanvas = () => {
 						maxPolarAngle={Math.PI / 2}
 						minPolarAngle={Math.PI / 2}
 					/>
-					<Computer />
+					<Computer isMobile={mobileView} />
 				</Suspense>
 
 				<Preload all />
