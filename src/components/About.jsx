@@ -35,7 +35,7 @@ const ServiceCard = ({ index, title, icon }) => (
 
 const About = () => {
 	return (
-		<>
+		<div className='mb-3'>
 			<motion.div variants={textVariant()}>
 				<p className='section-sub-text'>Introduction</p>
 				<h2 className='section-head-text'>Overview</h2>
@@ -53,7 +53,7 @@ const About = () => {
 					<ServiceCard key={service.title} index={index} {...service} />
 				))}
 			</div>
-		</>
+		</div>
 	);
 };
 
