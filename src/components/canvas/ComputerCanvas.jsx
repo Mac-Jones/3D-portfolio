@@ -1,11 +1,20 @@
-import { Suspense } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload } from '@react-three/drei';
+
+import { useMediaQuery } from 'react-responsive';
 
 import CanvasLoader from '../Loader';
 import Computer from './Computer';
 
 const ComputerCanvas = () => {
+	const [mobileView, setMobileView] = useState(false);
+
+	const isMobile = useMediaQuery({ query: '(max-width: 500px)' });
+	useEffect(() => {
+		setMobileView(isMobile);
+	}, [isMobile]);
+
 	return (
 		<Canvas
 			frameloop='demand'
@@ -20,7 +29,7 @@ const ComputerCanvas = () => {
 					maxPolarAngle={Math.PI / 2}
 					minPolarAngle={Math.PI / 2}
 				/>
-				<Computer />
+				{isMobile && <Computer isMobile={mobileView} />}
 			</Suspense>
 
 			<Preload all />
