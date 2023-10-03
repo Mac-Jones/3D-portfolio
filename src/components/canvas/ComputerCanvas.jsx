@@ -17,20 +17,18 @@ const ComputerCanvas = () => {
 	}, [isMobile]);
 
 	return (
-		<div className='absolute inset-0'>
-			<Canvas frameloop='demand' camera={{ position: [20, 3, 5], fov: 25 }}>
-				<Suspense fallback={<CanvasLoader />}>
-					<OrbitControls
-						enableZoom={false}
-						maxPolarAngle={Math.PI / 2}
-						minPolarAngle={Math.PI / 2}
-					/>
-					<Computer isMobile={mobileView} />
-				</Suspense>
+		<Canvas frameloop='always' camera={{ position: [21, 3, 5], fov: 25 }}>
+			<Suspense fallback={<CanvasLoader />}>
+				<OrbitControls
+					enableZoom={false}
+					maxPolarAngle={Math.PI / 2}
+					minPolarAngle={Math.PI / 2}
+				/>
+				<Computer isMobile={mobileView} />
+			</Suspense>
 
-				<Preload all />
-			</Canvas>
-		</div>
+			<Preload all />
+		</Canvas>
 	);
 };
 

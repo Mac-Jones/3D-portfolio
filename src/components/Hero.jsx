@@ -12,12 +12,12 @@ const Hero = () => {
 					<div className='w-1 sm:h-80 h-40 violet-gradient' />
 				</div>
 
-				<div>
+				<div className='relative z-50'>
 					<h1 className='hero-text leading-normal'>
 						Hi, I&apos;am{' '}
 						<span className='text-[#915eff]  md:inline block'>Mac Jones</span>
 					</h1>
-					<p className='hero-sub-text mt-2 text-white-100'>
+					<p className=' hero-sub-text mt-2 text-white-100 '>
 						I develop stunning web application,{' '}
 						<br className='sm:block hidden' /> user-centric interfaces, and
 						fullstack solutions
@@ -25,7 +25,7 @@ const Hero = () => {
 				</div>
 			</div>
 			<ComputerCanvas />
-			<div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+			<div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-50'>
 				<a href='#about'>
 					<div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
 						<motion.div
