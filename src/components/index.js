@@ -7,6 +7,7 @@ import Experience from './Experience';
 import Projects from './Projects';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
+import Overlay from './Overlay';
 
 export {
 	Hero,
@@ -18,4 +19,5 @@ export {
 	Feedbacks,
 	Contact,
 	StarsCanvas,
+	Overlay,
 };

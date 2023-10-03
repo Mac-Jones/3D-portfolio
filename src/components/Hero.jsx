@@ -2,6 +2,7 @@ import { lazy } from 'react';
 import { motion } from 'framer-motion';
 
 const ComputerCanvas = lazy(() => import('./canvas/ComputerCanvas'));
+import { Overlay } from '../components';
 
 const Hero = () => {
 	return (
@@ -44,6 +45,7 @@ const Hero = () => {
 					</div>
 				</a>
 			</div>
+			<Overlay />
 		</section>
 	);
 };
