@@ -17,7 +17,7 @@ const ComputerCanvas = () => {
 	}, [isMobile]);
 
 	return (
-		<Canvas frameloop='always' camera={{ position: [21, 3, 5], fov: 20 }}>
+		<Canvas camera={{ position: [21, 3, 5], fov: 20 }}>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls
 					enableZoom={false}
