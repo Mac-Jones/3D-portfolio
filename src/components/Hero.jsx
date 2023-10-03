@@ -12,7 +12,7 @@ const Hero = () => {
 					<div className='w-1 sm:h-80 h-40 violet-gradient' />
 				</div>
 
-				<div className='relative z-50'>
+				<div className='relative z-40'>
 					<h1 className='hero-text leading-normal'>
 						Hi, I&apos;am{' '}
 						<span className='text-[#915eff]  md:inline block'>Mac Jones</span>

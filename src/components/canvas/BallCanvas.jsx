@@ -8,7 +8,7 @@ import Ball from '../canva/Ball';
 
 const BallCanvas = ({ icon }) => {
 	return (
-		<Canvas frameloop='demand'>
+		<Canvas frameloop='always'>
 			<Suspense fallback={<CanvasLoader />}>
 				<OrbitControls enableZoom={false} />
 				<Ball imgUrl={icon} />
