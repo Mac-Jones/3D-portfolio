@@ -2,7 +2,6 @@ import { lazy } from 'react';
 import { motion } from 'framer-motion';
 
 const ComputerCanvas = lazy(() => import('./canvas/ComputerCanvas'));
-import { Overlay } from '../components';
 
 const Hero = () => {
 	return (
@@ -25,9 +24,7 @@ const Hero = () => {
 					</p>
 				</div>
 			</div>
-
 			<ComputerCanvas />
-
 			<div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
 				<a href='#about'>
 					<div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
@@ -45,7 +42,8 @@ const Hero = () => {
 					</div>
 				</a>
 			</div>
-			<Overlay />
+			{/* <Overlay /> */}
+			{/* <div className='absolute top-0 z-50 bg-black/5 w-full h-screen'></div>; */}
 		</section>
 	);
 };

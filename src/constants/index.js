@@ -25,6 +25,7 @@ import {
 	food,
 	breakout,
 	funrun,
+	threads,
 } from '../assets';
 
 export const navLinks = [
@@ -129,6 +130,29 @@ const testimonials = [
 ];
 
 const projects = [
+	{
+		name: 'Threads Social Media',
+		description:
+			'A modern and feature-rich social media platform powered by Next.js and MongoDB, designed to connect people and facilitate discussions. With a sleek user interface and real-time updates, Threads offers a seamless social networking experience.',
+		tags: [
+			{
+				name: 'nextjs',
+				color: 'blue-text-gradient',
+			},
+			{
+				name: 'clerk',
+				color: 'green-text-gradient',
+			},
+			{
+				name: 'mongodb',
+				color: 'pink-text-gradient',
+			},
+		],
+		image: threads,
+		source_code_link: 'https://github.com/Mac-Jones/nike-app-tailwind',
+		live: 'https://nike-app-tailwind-css.netlify.app/',
+	},
+
 	{
 		name: 'Nike App',
 		description:

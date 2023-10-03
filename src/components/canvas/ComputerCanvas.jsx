@@ -18,7 +18,7 @@ const ComputerCanvas = () => {
 
 	return (
 		<div className='absolute inset-0'>
-			<Canvas camera={{ position: [20, 3, 5], fov: 25 }}>
+			<Canvas frameloop='demand' camera={{ position: [20, 3, 5], fov: 25 }}>
 				<Suspense fallback={<CanvasLoader />}>
 					<OrbitControls
 						enableZoom={false}

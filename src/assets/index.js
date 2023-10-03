@@ -34,6 +34,7 @@ import monster from './project/Monster.png';
 import food from './project/food.png';
 import breakout from './project/breakout-game.png';
 import funrun from './project/fun-run.png';
+import threads from './project/threads.png';
 
 export {
 	logo,
@@ -68,4 +69,5 @@ export {
 	food,
 	breakout,
 	funrun,
+	threads,
 };

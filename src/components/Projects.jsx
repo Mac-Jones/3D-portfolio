@@ -4,12 +4,10 @@ import { motion } from 'framer-motion';
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
 
 import { GrDeploy } from 'react-icons/gr';
 
 const ProjectCard = ({
-	index,
 	name,
 	description,
 	tags,
@@ -27,7 +25,7 @@ const ProjectCard = ({
 					<img
 						src={image}
 						alt='project_image'
-						className='w-full h-full object-cover rounded-2xl'
+						className='w-full h-full object-cover object-left rounded-2xl'
 						loading='lazy'
 					/>
 
